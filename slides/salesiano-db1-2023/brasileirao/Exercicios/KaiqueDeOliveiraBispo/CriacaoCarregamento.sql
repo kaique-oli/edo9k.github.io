@@ -99,6 +99,6 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n' 
 IGNORE 1 LINES 
 (partida_id, clube, chutes, @posse_de_bola, passes, @precisao_passes, faltas, impedimentos, escanteios)
-SET precisao_passes = NULLIF(@tipo_de_gol, 0), posse_de_bola = NULLIF(@posse_de_bola, 0);
+SET precisao_passes = NULLIF(@precisao_passes, 0), posse_de_bola = NULLIF(@posse_de_bola, 0);
 
 
